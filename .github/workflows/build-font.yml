@@ -44,5 +44,5 @@ jobs:
       - name: Upload Font
         uses: actions/upload-artifact@v4
         with:
-          name: IosevkaCustom-TTF
-          path: source/dist/*.ttf
+          name: IosevkaCustom
+          path: source/dist/IosevkaCustom/**
