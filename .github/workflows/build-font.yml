@@ -27,7 +27,12 @@ jobs:
       - name: Install Dependencies
         working-directory: source
         run: npm install
-
+      
+      - name: Install ttfautohint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ttfautohint
+      
       - name: Build Font
         working-directory: source
         run: npm run build -- ttf::IosevkaCustom
