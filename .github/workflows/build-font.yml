@@ -37,6 +37,10 @@ jobs:
         working-directory: source
         run: npm run build -- ttf::IosevkaCustom
 
+      - name: List Generated Files
+        run: |
+          find source -type f | sort
+
       - name: Upload Font
         uses: actions/upload-artifact@v4
         with:
